@@ -15,5 +15,10 @@ namespace FormularioSaludo_TP_G5_2022_II
         {
             MessageBox.Show("Hola " + txtbNombre.Text);
         }
+
+        public void Click_LimpiarPantalla(object sender, EventArgs e)
+        {
+            txtbNombre.Clear();
+        }
     }
 }

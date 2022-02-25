@@ -9,6 +9,8 @@ namespace FormularioSaludo_TP_G5_2022_II
         private Label lbMensaje;
         private TextBox txtbNombre;
         private Button btnSaludo;
+        private Button btnLimpiar;
+
         private void InicializarComponentes()
         {           
             //Atributos y propiedades de la Clase FormSaludos
@@ -33,9 +35,18 @@ namespace FormularioSaludo_TP_G5_2022_II
 
             btnSaludo.Click += new EventHandler(Click_Saludo);
 
+            btnLimpiar = new Button();
+            btnLimpiar.Text = "Limpiar";
+            btnLimpiar.Location = new Point(250, 200);
+            btnLimpiar.Size= new Size(100,50);
+            btnLimpiar.Click += new EventHandler(Click_LimpiarPantalla);
+
+
+
             this.Controls.Add(lbMensaje);
             this.Controls.Add(txtbNombre);
             this.Controls.Add(btnSaludo);
+            this.Controls.Add(btnLimpiar);
            
         }
 
