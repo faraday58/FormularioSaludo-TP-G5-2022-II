@@ -19,6 +19,15 @@ namespace FormularioSaludo_TP_G5_2022_II
         public void Click_LimpiarPantalla(object sender, EventArgs e)
         {
             txtbNombre.Clear();
+            CambiaTexto();
+
         }
+
+        public void CambiaTexto()
+        {
+            lbMensaje.Text = "Texto modificado";
+            
+        }
+
     }
 }
